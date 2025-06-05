@@ -1,13 +1,20 @@
 {
-  "name": "dash",
-  "compatibility_date": "2025-04-03",
+	"name": "dash",
+	"compatibility_date": "2025-04-03",
 
-  "main": "index.ts",
-  "placement": {
-    "mode": "smart"
-  },
-  "dev": {
-    "port": 7070,
-    "local_protocol": "http"
-  }
+	"main": "index.ts",
+	"placement": {
+		"mode": "smart"
+	},
+	"dev": {
+		"port": 7070,
+		"local_protocol": "http"
+	},
+	"services": [
+		{
+			"binding": "AUTH_SVC",
+			"service": "auth-svc",
+			"entrypoint": "AuthService"
+		}
+	]
 }
