@@ -1,0 +1,17 @@
+{
+  "name": "router",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-04-03",
+
+  "services": [
+    {
+      "binding": "DASHBOARD",
+      "service": "dash"
+    },
+  ],
+
+  "dev": {
+    "port": 8080,
+    "local_protocol": "http"
+  }
+}

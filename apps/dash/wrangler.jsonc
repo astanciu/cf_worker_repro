@@ -1,0 +1,13 @@
+{
+  "name": "dash",
+  "compatibility_date": "2025-04-03",
+
+  "main": "index.ts",
+  "placement": {
+    "mode": "smart"
+  },
+  "dev": {
+    "port": 7070,
+    "local_protocol": "http"
+  }
+}

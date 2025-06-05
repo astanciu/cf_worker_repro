@@ -1,0 +1,8 @@
+packages:
+  - apps/*
+  - '!**/node_modules'
+onlyBuiltDependencies:
+  - esbuild
+  - sharp
+  - workerd
+sideEffectsCache: false

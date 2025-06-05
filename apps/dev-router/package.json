@@ -1,0 +1,16 @@
+{
+  "name": "dev-router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "wrangler": "wrangler"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "devDependencies": {
+    "wrangler": "^4.19.0"
+  }
+}
