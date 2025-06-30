@@ -1,13 +1,34 @@
-There's 2 issues here:
+# Cloudflare Queue Reproduction repo
+
+## Problem
+When developing locally, a producer and consumer do not successfully connect to the queue when both are started using separate `wrangler dev` commands.
+
+## Run
+
+```
+pnpm install
+
+# In terminal 1
+cd apps/producer
+pnpm dev
 
 
-1. The router doesn't see the dash worker when the dash worker is being ran through vite
-- start router with `pnpm wrangler dev`
-- start dash with `pnpm dev` (which is vite)
+# In terminal 2
+cd apps/consumer
+pnpm dev
+
+```
+
+Then send an http request to the address/port show on startup, likely `http://localhost:8787`.
+
+The consumer won't show the received message.
 
 
-2. The dash worker does not see the auth service when it's being ran through vite
-- start auth service with `pnpm wrangler dev`
-- start dash with `pnpm dev` (which is vite)
+## Running from the same command, with "-c"
+If you start both workers from the same `worker dev` instance, with multiple `-c` configurations, it does work.
 
-If all workers are started with wrangler dev, they all show [connected] in their respective "parent".
+This can be tried via:
+
+```
+pnpm run both
+```
