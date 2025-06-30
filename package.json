@@ -1,0 +1,17 @@
+{
+	"name": "repro",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.10.0",
+	"scripts": {
+		"both": "wrangler dev -c apps/producer/wrangler.jsonc -c apps/consumer/wrangler.jsonc"
+	},
+	"devDependencies": {
+		"typescript": "^5.8.3",
+		"wrangler": "4.22.0"
+	}
+}

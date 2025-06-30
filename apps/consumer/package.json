@@ -1,0 +1,16 @@
+{
+	"name": "@foo/consumer",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "wrangler dev --persist-to ../../.wrangler/state"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.10.0",
+	"devDependencies": {
+		"wrangler": "4.22.0"
+	}
+}

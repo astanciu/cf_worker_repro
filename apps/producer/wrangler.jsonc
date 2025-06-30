@@ -1,0 +1,13 @@
+{
+	"name": "producer",
+	"compatibility_date": "2025-06-30",
+	"main": "index.ts",
+	"queues": {
+		"producers": [
+			{
+				"queue": "request",
+				"binding": "QUEUE"
+			}
+		]
+	}
+}

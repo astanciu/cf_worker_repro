@@ -1,0 +1,14 @@
+{
+	"name": "@foo/producer",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "wrangler dev --persist-to ../../.wrangler/state",
+		"build": "vite build"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"typescript": "^5.7.2",
+		"wrangler": "4.22.0"
+	}
+}

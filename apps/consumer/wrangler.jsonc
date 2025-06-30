@@ -1,0 +1,13 @@
+{
+	"name": "consumer",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-06-30",
+	"queues": {
+		"consumers": [
+			{
+				"queue": "request",
+				"max_batch_size": 1
+			}
+		]
+	}
+}
