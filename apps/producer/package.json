@@ -4,11 +4,10 @@
 	"type": "module",
 	"scripts": {
 		"dev": "wrangler dev --persist-to ../../.wrangler/state",
-		"build": "vite build"
+		"dev:rb": "pnpm wrangler dev --x-remote-bindings"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"typescript": "^5.7.2",
-		"wrangler": "4.22.0"
+		"wrangler": "4.24.3"
 	}
 }

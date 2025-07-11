@@ -4,13 +4,14 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "wrangler dev --persist-to ../../.wrangler/state"
+		"dev": "wrangler dev --persist-to ../../.wrangler/state",
+		"dev:rb": "pnpm wrangler dev --x-remote-bindings"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"packageManager": "pnpm@10.10.0",
 	"devDependencies": {
-		"wrangler": "4.22.0"
+		"wrangler": "4.24.3"
 	}
 }

@@ -8,8 +8,8 @@ export default {
 			headers: Object.fromEntries(request.headers),
 		};
 		console.log("sending..");
-		await env.QUEUE.send(log);
-		console.log("Sent..");
+		const res = await env.testo.send(log);
+		console.log("Sent..", res);
 		console.log(log);
 		return new Response("Success!");
 	},
