@@ -6,8 +6,7 @@
 		"producers": [
 			{
 				"queue": "testo",
-				"binding": "testo",
-				"experimental_remote": true
+				"binding": "testo"
 			}
 		]
 	}
